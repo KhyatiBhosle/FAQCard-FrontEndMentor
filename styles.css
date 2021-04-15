@@ -1,0 +1,144 @@
+body{
+    background-image: linear-gradient(to bottom,hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.row{
+    margin: 102px 250px;
+    background-color : white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px hsl(240, 73%, 65%) , 0px 10px 20px hsl(238, 29%, 16%);
+    padding: 75px;
+    height: 550px;
+
+}
+h1{
+    font-weight: bolder;
+}
+.question:hover{
+    cursor: pointer;
+}
+
+.question{
+    font-size: 16px; 
+    font-weight: 700; 
+    color: hsl(240, 6%, 50%);
+}
+
+.q1:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.clicked{
+    font-weight: bolder;
+    color:hsl(238, 29%, 16%);
+}
+
+.answer{
+    margin-top: 10px;
+    color: hsl(240, 6%, 50%);
+}
+
+.arrow{
+    float: right;
+    margin-top: 7px;
+}
+
+.arrow-rotate{
+    transform: rotate(180deg);
+}
+
+.bg{
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    right:850px;
+    width: 960px;
+}
+
+.woman{
+    position: absolute;
+    top:170px;
+    right:850px;
+    width: 520px;
+}
+.box{
+    position:absolute;
+    z-index: 3;
+    top:300px;
+    left: 120px;
+}
+
+.transparent-1{
+    position: absolute;
+    z-index: 2;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 249.7px;
+    background-image: linear-gradient(to bottom,hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
+}
+
+.transparent-2{
+    position: absolute;
+    top:0;
+    z-index: 3;
+    height: 101px;
+    width: 700px;
+    /* background-color: hsl(270,75%,66%); */
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%),hsl(270,75%,66%));
+    }
+
+
+
+@media screen and (max-width: 500px) {
+    .transparent-1{
+        width: 0px;
+        height: 0px;
+    }
+
+    .transparent-2{
+        width: 0px;
+        height: 0px;
+    }
+    .questions{
+        width: 100vw;
+    }
+    .row{
+        margin: 200px 25px 100px 25px;
+        padding: 150px 10px 30px 10px;
+        height: auto;
+        text-align: center;
+    }
+
+    .bg{
+        width: 60vw;
+        position: absolute;
+        top:70px;
+        right:20vw;
+    }
+    
+    .woman{
+        width: 60vw;
+        position: absolute;
+        top:90px;
+        right:20vw;
+    }
+
+    .box{
+       width: 100px;
+       position: absolute;
+       top: 155px;
+       left:17vw;
+    }
+
+    .question{
+        text-align: left;
+        font-size: 14px; 
+    }
+
+    .answer{
+        font-size: 14px;   
+    }
+}
