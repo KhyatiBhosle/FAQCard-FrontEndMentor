@@ -139,6 +139,7 @@ h1{
     }
 
     .answer{
-        font-size: 14px;   
+        font-size: 14px;
+        text-align: left; 
     }
 }
